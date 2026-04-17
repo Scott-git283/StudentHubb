@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.StudentH"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".AttendanceActivity" />
+        <activity android:name=".ResultsActivity" />
+        <activity android:name=".ViewAnnouncementsActivity" />
+        <activity android:name=".ManageUsersActivity" />
+        <activity android:name=".AddUserActivity" />
+        <activity android:name=".EditUserActivity" />
+        <activity android:name=".ManageCoursesActivity" />
+        <activity android:name=".AddCourseActivity" />
+        <activity android:name=".EditCourseActivity" />
+        <activity android:name=".ManageDepartmentsActivity" />
+        <activity android:name=".AddDepartmentActivity" />
+        <activity android:name=".EditDepartmentActivity" />
+        <activity android:name=".ManageEnrollmentActivity" />
+        <activity android:name=".EnrollStudentActivity" />
+        <activity android:name=".ViewStudentsActivity" />
+        <activity android:name=".UpdateRecordsActivity" />
+        <activity android:name=".SelectStudentActivity" />
+        <activity android:name=".ManageStudentRecordsActivity" />
+        <activity android:name=".PostAnnouncementActivity" />
+        <activity android:name=".ManageAnnouncementsActivity" />
+        <activity android:name=".EditAnnouncementActivity" />
+    </application>
+
+</manifest>
